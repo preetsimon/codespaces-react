@@ -1,31 +1,15 @@
-import { useState } from 'react';
 import './App.css';
+import Product from './Product';
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const decreaseCount = () => {
-    setCount(count-1);
-  }
-
-  const increaseCount = () => {
-    setCount(count+1);
-  }
-
   return (
     <div className="App">
- <h1>Welcome to my counter</h1>
- <p>The count is:{count}</p>
- <button onClick={()=>decreaseCount()}> - </button>
- <button onClick={()=>increaseCount()}> + </button>
-
+  <h1>Forever is a Long time</h1>
+  <Product name='Avacado' description="fresh from Mexico" price={20.99}/>
+  <Product name='Apple' description="jiucy and cripy red" price={10.99}/>
   <br></br>
   <p>
-State: correct way of defining variables in React.
-Allows us to have some memory inside the component that is local to that component.
-<br/>
-State is non-persistent: Refreshing the web page -> states are lost.
-
+    Props: properties of components, passed from top down, readOnly
   </p>
 
 
