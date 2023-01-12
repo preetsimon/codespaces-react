@@ -1,27 +1,18 @@
 import './App.css';
+import Product from './Product';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+  <h1>Forever is a Long time</h1>
+  <Product name='Avacado' description="fresh from Mexico" price={20.99}/>
+  <Product name='Apple' description="jiucy and cripy red" price={10.99}/>
+  <br></br>
+  <p>
+    Props: properties of components, passed from top down, readOnly
+  </p>
+
+
     </div>
   );
 }
